@@ -4,7 +4,7 @@ const path = require('path')
 const webpack = require('webpack')
 
 module.exports = {
-  entry: './public/index.js',
+  entry: './src/index.js',
   mode: 'development',
   module: {
     rules: [
@@ -24,7 +24,7 @@ module.exports = {
               sassOptions: {
                 indentWidth: 4,
                 includePaths: [
-                  "public/style",
+                  "src/style",
                 ],
               },
             },
@@ -36,7 +36,7 @@ module.exports = {
   resolve: {
     extensions: ["*", ".js", ".jsx"],
     roots: [
-      path.resolve('./public'),
+      path.resolve('./src'),
     ],
   },
   output: {
@@ -45,8 +45,8 @@ module.exports = {
     filename: 'bundle.js',
   },
   devServer: {
-    contentBase: path.join(__dirname, "public/"),
+    contentBase: path.join(__dirname, ""),
     port: 8080,
-    publicPath: "http://localhost:8080/dist/",
+    publicPath: "http://localhost:8080/src",
   },
 }
