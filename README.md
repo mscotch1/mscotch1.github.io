@@ -1,5 +1,5 @@
 # mscotch1.github.io
-This is the repository that holds the source for my [website](https://www.mscotch1.github.io).
+This is the repository that holds the source for my [website](https://mscotch1.github.io).
 
 ## Build Locally
 ```bash
