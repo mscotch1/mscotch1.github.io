@@ -9,11 +9,6 @@
 
 <body>
   <script src="../dist/bundle.js"></script>
-  <style>
-    * {
-      font-family: 'Fira Code', monospace;
-    }
-  </style>
   <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-primary"
     style="position: sticky; top: 0; z-index: 999">
     <a class="navbar-brand" href="#"><img src="./assets/hedgehog.svg"></a>
@@ -29,9 +24,12 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link">Resume</a>
+          <a class="nav-link" data-toggle="tooltip" data-title="Currently under construction">Resume</a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item" data-toggle="tooltip" data-title="Currently under construction">
+          <a class="nav-link">Blog</a>
+        </li>
+        <!--<li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Projects
@@ -39,10 +37,8 @@
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">Fractal Viewer</a>
             <a class="dropdown-item" href="#">Reversi AI</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Blog</a>
           </div>
-        </li>
+        </li>-->
       </ul>
     </div>
   </nav>
@@ -56,6 +52,7 @@
           company based in Madison, Wisconsin.
           For fun, I enjoy stand-up paddleboarding. And making this website, I suppose.
         </p>
+        <button class="btn btn-lg btn-primary" data-toggle="tooltip" data-title="Currently under construction">Full bio</button>
       </div>
     </div>
     <div class="container">
@@ -77,10 +74,6 @@
               style="min-width: 50px; width: 1px; max-height: 20vh" alt="HTML5 Logo"></img>
             <img src="./assets/CSS3_logo_and_wordmark.svg" class="flex-grow-1 flex-shrink-1"
               style="min-width: 50px; width: 1px; max-height: 20vh" alt="HTML5 Logo"></img>
-            <div class="position-relative flex-grow-1 flex-shrink-1"
-              style="min-width: 50px; width: 1px; max-height: 20vh">
-              <img src="./assets/AngularJS-Shield-large.png" class="h-100" alt="HTML5 Logo"></img>
-            </div>
           </div>
         </div>
       </div>
