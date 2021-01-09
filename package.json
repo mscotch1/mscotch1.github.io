@@ -4,9 +4,9 @@
   "description": "Personal website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --host 0.0.0.0",
-    "build": "webpack --config webpack.config.js --mode production"
+    "test":  "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=development webpack-dev-server --config webpack.config.js --host 0.0.0.0",
+    "build": "NODE_ENV=production webpack --config webpack.config.js --mode production"
   },
   "repository": {
     "type": "git",
@@ -20,17 +20,24 @@
   "homepage": "https://github.com/mscotch1/mscotch1.github.io#readme",
   "dependencies": {
     "bootstrap": "^4.5.3",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "vue": "^2.6.12"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.8",
     "@babel/core": "^7.12.9",
     "@babel/preset-env": "^7.12.7",
     "babel-loader": "^8.2.1",
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.0.1",
+    "html-webpack-plugin": "^4.5.0",
+    "raw-loader": "^4.0.2",
     "sass": "^1.29.0",
     "sass-loader": "^10.1.0",
     "style-loader": "^2.0.0",
+    "vue-loader": "^15.9.6",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.6.12",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0"
