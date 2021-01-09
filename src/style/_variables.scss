@@ -1,4 +1,10 @@
+/*! `Hootstrap` Bootstrap 4 theme */
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:200,300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:200,300,400,700);
+$headings-font-family:Dancing Script;
+$font-family-base:Lato;
 
+// Add SASS theme customizations here..
 $white: #fff;
 $gray-100: #f8f9fa;
 $gray-200: #ecf0f1;
@@ -20,23 +26,16 @@ $yellow: #F39C12;
 $green: #449F50;
 $teal: #20c997;
 $cyan: #3498DB;
-$primary: $blue;
-$secondary: $gray-600;
-$success: $green;
-$info: $cyan;
-$warning: $yellow;
-$danger: $red;
-$light: $gray-200;
-$dark: $gray-900;
 
+$primary:#528078;
+$secondary:#eed75a;
+$success:#FEC100;
+$danger:#703B3B;
+$info:#63e792;
+$warning:#FFE869;
+$light:#FDFBF7;
+$dark:#555555;
 $dropdown-link-color: $gray-700;
 $dropdown-link-hover-color: $white;
 $dropdown-link-hover-bg: $primary;
 
-$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-base: $font-family-monospace !default;
-
-$jumbotron-bg: $gray-400;
-
-$link-color: #3C31C4;
-$link-decoration: underline;
