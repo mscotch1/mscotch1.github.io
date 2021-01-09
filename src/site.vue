@@ -3,6 +3,7 @@
     <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-primary"
       style="position: sticky; top: 0; z-index: 999">
       <a class="navbar-brand" href="#"><img src="assets/hedgehog.svg"></a>
+      <a class="navbar-brand text-capitalized badge rounded-pill bg-dark p-2 text-decoration-none" target="_blank" href="https://blacklivesmatter.com/">Black Lives Matter</a>
       <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -12,7 +13,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="tooltip" data-title="Currently under construction">Resume</a>
