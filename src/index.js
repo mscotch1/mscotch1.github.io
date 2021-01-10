@@ -1,7 +1,7 @@
 // 3rd party imports
 import 'jquery/dist/jquery.min.js'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
-import Vue from 'vue';
+import * as Vue from 'vue';
 
 // local imports
 // js
@@ -13,7 +13,9 @@ import './style/main.scss';
 import SiteComponent from './site.vue';
 // document.body.appendChild(document.createElement('site'));
 
-new Vue({
-  el: '#app',
-  render: h => h(SiteComponent),
+const app = Vue.createApp({
+  render: () => Vue.h(SiteComponent),
 });
+
+const mounted_app = app.mount('#app');
+

@@ -58,11 +58,11 @@
         </div>
         <h2>Skills</h2>
         <ul class="list-unstyled d-flex w-100">
-          <img src="assets/cpp_logo.svg" class="mr-3 flex-grow-1 flex-shrink-1" alt="C++ Logo" style="min-width: 50px; width: 1px; max-height: 20vh"></img>
+          <img src="assets/cpp_logo.svg" class="mr-3 flex-grow-1 flex-shrink-1" alt="C++ Logo" style="min-width: 50px; width: 1px; max-height: 20vh">
           <img src="assets/HTML5_Logo.svg" class="flex-grow-1 flex-shrink-1"
-            style="min-width: 50px; width: 1px; max-height: 20vh" alt="HTML5 Logo"></img>
+            style="min-width: 50px; width: 1px; max-height: 20vh" alt="HTML5 Logo">
           <img src="assets/CSS3_logo_and_wordmark.svg" class="flex-grow-1 flex-shrink-1"
-            style="min-width: 50px; width: 1px; max-height: 20vh" alt="HTML5 Logo"></img>
+            style="min-width: 50px; width: 1px; max-height: 20vh" alt="HTML5 Logo">
         </ul>
       </div>
     </div>
