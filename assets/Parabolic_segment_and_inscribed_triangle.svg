@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   x="0.00000000"
+   y="0.00000000"
+   width="243.00000"
+   height="400.00000">
+  <path
+     d="M 120.90625,4.3750000 C 78.735463,4.3750000 42.846819,74.616358 21.843750,127.34375 L 21.968750,128.12500 L 174.34375,40.156250 C 158.28177,19.243363 140.21887,4.3750000 120.90625,4.3750000 z "
+     style="fill:#e5ccfe;stroke:none" />
+  <path
+     d="M 1.9830815,184.36090 C 1.9830815,184.36090 53.411651,4.3609024 120.91165,4.3609024 C 188.41165,4.3609024 241.62594,183.28947 241.62594,183.28947"
+     style="fill:none;stroke:#000000;stroke-width:2.0000000;stroke-linecap:butt" />
+  <path
+     d="M 2.3537197,139.32853 L 236.79933,3.9712855"
+     style="stroke:#000000;stroke-width:2.0000000;stroke-linecap:butt" />
+
+
+  <path
+     d="M 98.037040,221.33478 C 98.037040,221.33478 171.81322,249.73975 172.09404,250.01225 C 172.28871,250.20115 23.651280,336.48287 23.651280,336.48287 C 49.125130,298.75431 73.354190,259.72403 98.037040,221.33478 z "
+     style="fill:#cce5fe;stroke:#000000;stroke-width:1.0000000px" />
+  <path
+     d="M 1.7142500,394.79699 C 1.7142500,394.79699 53.142820,214.79699 120.64282,214.79699 C 188.14282,214.79699 241.35711,393.72556 241.35711,393.72556"
+     style="fill:none;stroke:#000000;stroke-width:2.0000000;stroke-linecap:butt" />
+  <path
+     d="M 21.714250,338.54699 L 174.61162,250.27165"
+     style="stroke:#000000;stroke-width:2.0000000;stroke-linecap:butt" />
+  <path
+     d="M 97.785670,375.51127 L 97.785670,222.02913"
+     style="stroke:#000000;stroke-width:1.5000000;stroke-linecap:butt;stroke-dasharray:6.0000000 3.0000000 " />
+  <path
+     d="M 174.74995,375.51127 L 174.74995,250.86841"
+     style="stroke:#000000;stroke-width:1.5000000;stroke-linecap:butt;stroke-dasharray:6.0000000 3.0000000 " />
+  <path
+     d="M 20.732100,375.51127 L 20.732100,339.08270"
+     style="stroke:#000000;stroke-width:1.5000000;stroke-linecap:butt;stroke-dasharray:6.0000000 3.0000000 " />
+  <g
+     transform="translate(-495.4286,117.3790)">
+    <path
+       d="M 584.86600,224.46075 L 592.50000,228.79075 L 584.86600,233.21075 L 587.76786,228.79075 L 584.86600,224.46075 z "
+       style="fill:#000000" />
+    <path
+       d="M 524.55357,224.46075 L 516.91957,228.79075 L 524.55357,233.21075 L 521.65171,228.79075 L 524.55357,224.46075 z "
+       style="fill:#000000" />
+    <path
+       d="M 521.64063,228.79075 L 587.78251,228.79075"
+       style="stroke:#000000;stroke-width:1.0000000px" />
+  </g>
+  <g
+     transform="translate(-418.4643,117.3790)">
+    <path
+       d="M 584.86600,224.46075 L 592.50000,228.79075 L 584.86600,233.21075 L 587.76786,228.79075 L 584.86600,224.46075 z "
+       style="fill:#000000" />
+    <path
+       d="M 524.55357,224.46075 L 516.91957,228.79075 L 524.55357,233.21075 L 521.65171,228.79075 L 524.55357,224.46075 z "
+       style="fill:#000000" />
+    <path
+       d="M 521.64063,228.79075 L 587.78251,228.79075"
+       style="stroke:#000000;stroke-width:1.0000000px" />
+  </g>
+  <text
+     x="54.292904"
+     y="366.27307"
+     style="font-size:16.000000px;text-align:start;fill:#000000;stroke:none;font-family:Arial"
+     xml:space="default">d</text>
+  <text
+     x="132.05139"
+     y="366.27307"
+     style="font-size:16.000000px;text-align:start;fill:#000000;stroke:none;font-family:Arial"
+     xml:space="default">d</text>
+  <text
+     x="132.59827"
+     y="351.94131"
+     style="font-size:16.000000px;text-align:start;fill:#000000;stroke:none;font-family:Arial"
+     xml:space="default">//</text>
+  <text
+     x="54.839779"
+     y="351.94131"
+     style="font-size:16.000000px;text-align:start;fill:#000000;stroke:none;font-family:Arial"
+     xml:space="default">//</text>
+</svg>

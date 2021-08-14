@@ -19,8 +19,9 @@
   },
   "homepage": "https://github.com/mscotch1/mscotch1.github.io#readme",
   "dependencies": {
-    "bootstrap": "^4.5.3",
-    "jquery": "^3.5.1"
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.5.1",
+    "vue": "^3.0.5"
   },
   "devDependencies": {
     "@babel/cli": "^7.12.8",
@@ -35,7 +36,6 @@
     "sass": "^1.29.0",
     "sass-loader": "^10.1.0",
     "style-loader": "^2.0.0",
-    "vue": "^3.0.5",
     "vue-loader": "^16.1.2",
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.6.12",

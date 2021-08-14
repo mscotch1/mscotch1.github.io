@@ -11,8 +11,8 @@ import './init_tooltips.js';
 import './style/main.scss';
 
 import SiteComponent from './site.vue';
-// document.body.appendChild(document.createElement('site'));
 
+// mount application
 const app = Vue.createApp({
   render: () => Vue.h(SiteComponent),
 });

@@ -27,15 +27,18 @@ $green: #449F50;
 $teal: #20c997;
 $cyan: #3498DB;
 
-$primary:#528078;
+$primary:$blue;
 $secondary:#eed75a;
 $success:#FEC100;
 $danger:#703B3B;
 $info:#63e792;
 $warning:#FFE869;
-$light:#FDFBF7;
+$light:#E4E2DE;
 $dark:#555555;
 $dropdown-link-color: $gray-700;
 $dropdown-link-hover-color: $white;
 $dropdown-link-hover-bg: $primary;
+$grid-gutter-width: 50px;
 
+$carousel-control-color: $primary;
+$carousel-indicator-active-bg: $primary;
