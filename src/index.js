@@ -4,12 +4,9 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js'
 import * as Vue from 'vue';
 
 // local imports
-// js
 import './init_tooltips.js';
 
-// style
-import './style/main.scss';
-
+// site component
 import SiteComponent from './site.vue';
 
 // mount application
