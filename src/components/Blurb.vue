@@ -6,7 +6,7 @@
 
 <template>
   <div class="card">
-    <div class="row content g-0" :class="{ 'flex-row-reverse': row_reverse }">
+    <div class="row content g-0">
       <div class="col-lg-8">
         <div class="card-body d-flex flex-column">
           <h3 class="card-title">{{ header }}</h3>
@@ -23,7 +23,7 @@
 
 <script>
   export default {
-    props: ['header', 'alt', 'description', 'credit', 'image', 'row_reverse'],
+    props: ['header', 'alt', 'description', 'credit', 'image'],
     data() {
       return {
       };
