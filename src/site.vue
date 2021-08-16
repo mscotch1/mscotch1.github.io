@@ -1,3 +1,53 @@
+<style lang="scss">
+  /*! `Hootstrap` Bootstrap 4 theme */
+  @import url(https://fonts.googleapis.com/css?family=Dancing+Script:200,300,400,700);
+  @import url(https://fonts.googleapis.com/css?family=Lato:200,300,400,700);
+  $headings-font-family:Dancing Script;
+  $font-family-base:Lato;
+
+  // Add SASS theme customizations here..
+  $white: #fff;
+  $gray-100: #f8f9fa;
+  $gray-200: #ecf0f1;
+  $gray-300: #dee2e6;
+  $gray-400: #ced4df;
+  $gray-500: #b4bcc2;
+  $gray-600: #95a5a6;
+  $gray-700: #7b8a8b;
+  $gray-800: #343a40;
+  $gray-900: #212529;
+  $black: #000;
+  $blue: #2C3E50;
+  $indigo: #6610f2;
+  $purple: #6f42c1;
+  $pink: #e83e8c;
+  $red: #E74C3C;
+  $orange: #fd7e14;
+  $yellow: #F39C12;
+  $green: #449F50;
+  $teal: #20c997;
+  $cyan: #3498DB;
+
+  $primary:$blue;
+  $secondary:#eed75a;
+  $success:#FEC100;
+  $danger:#703B3B;
+  $info:#63e792;
+  $warning:#FFE869;
+  $light:#E4E2DE;
+  $dark:#555555;
+  $dropdown-link-color: $gray-700;
+  $dropdown-link-hover-color: $white;
+  $dropdown-link-hover-bg: $primary;
+  $grid-gutter-width: 50px;
+
+  $carousel-control-color: $primary;
+  $carousel-indicator-active-bg: $primary;
+
+  // 3rd party styles
+  @import '~bootstrap/scss/bootstrap';
+</style>
+
 <template>
   <div>
     <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-primary px-3"
