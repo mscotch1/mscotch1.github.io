@@ -43,8 +43,10 @@
           :image="interest.image"
           :credit="interest.credit"
           :alt="interest.alt"
-          :class="{ 'mb-3': index !== interests.length - 1 }"
-          :row_reverse="index % 2 === 0">
+          :class="{
+            'mb-3': index !== interests.length - 1,
+            'reverse': index % 2 === 0,
+          }">
         </blurb>
         <h2 class="mt-3">Tech Toolkit</h2>
         <blurb v-for="(tool, index) in tools"
@@ -54,8 +56,10 @@
           :image="tool.image"
           :credit="tool.credit"
           :alt="tool.alt"
-          :class="{ 'mb-3': index !== tools.length - 1 }"
-          :row_reverse="index % 2 === 1">
+          :class="{
+            'mb-3': index !== tools.length - 1,
+            'reverse': index % 2 === 1,
+          }">
         </blurb>
       </div>
     </div>
@@ -64,6 +68,7 @@
 
 <script>
   import Blurb from './components/Blurb.vue';
+
   // build main Vue component
   export default {
     data() {
