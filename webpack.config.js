@@ -8,12 +8,14 @@ const { VueLoaderPlugin } = require('vue-loader');
 module.exports = {
   entry: {
     index:  './src/index.js',
-    about: './src/about.js',
-    blog:  './src/blog.js',
   },
   mode: 'development',
   module: {
     rules: [
+      {
+        test: /\.svg/,
+        loader: 'raw-loader',
+      },
       {
         test: /\.vue$/,
         loader: 'vue-loader',
@@ -45,9 +47,10 @@ module.exports = {
   },
   resolve: {
     extensions: ["*", ".js", ".jsx"],
-    roots: [
-      path.resolve('./src/'),
-    ],
+    alias: {
+      posts: path.resolve(__dirname, 'posts/'),
+      src: path.resolve(__dirname, 'src/'),
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -55,6 +58,12 @@ module.exports = {
       favicon: './assets/hedgehog.svg',
       templateContent: `
         <html>
+          <head>
+            <meta charset="utf-8">
+            <title>Michael Scott</title>
+            <meta http-equiv="Content-Security-Policy" content="default-frame 'self'">
+            <meta name="description" content="Personal website for Michael Scott">
+          </head>
           <body>
             <div id="app"></div>
           </body>

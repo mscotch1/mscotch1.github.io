@@ -1,0 +1,12 @@
+{
+  "1": {
+    "id": 1,
+    "title": "First Post",
+    "tags": [
+      "test",
+      "site"
+    ],
+   "created": "2021-08-21",
+   "summary": "My first post!"
+  }
+}

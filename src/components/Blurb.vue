@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="col-lg-4 position-relative">
-        <img :src="image" :alt="alt" style="max-width: 50vh" class="p-3 h-100 w-100">
+        <img :src="image" :alt="alt" style="max-width: 50vw" class="p-3 h-100 w-100">
       </div>
     </div>
   </div>
@@ -23,7 +23,13 @@
 
 <script>
   export default {
-    props: ['header', 'alt', 'description', 'credit', 'image'],
+    props: {
+      header: String,
+      alt: String,
+      description: String,
+      credit: String,
+      image: String,
+    },
     data() {
       return {
       };
