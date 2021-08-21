@@ -18,9 +18,9 @@
         <div class="d-flex justify-content-end" style="margin: 0 -0.2rem 0 -0.2rem">
           <span class="badge badge-info" style="margin: 0 0.2rem 0 0.2rem" v-for="tag in post.tags" v-text="tag"></span>
         </div>
-        <div style="font-size: 1.2em" class="card-title d-flex align-items-baseline">
-          <span style="font-size: 1.2em" v-text="post.title"></span>
-          <date style="font-size: .9em" class="text-muted mb-1 ml-auto" :date="post.created"></date>
+        <div style="font-size: 1.2em" class="card-title d-flex flex-wrap align-items-baseline">
+          <span style="font-size: 1.2em" class="mr-auto" v-text="post.title"></span>
+          <date style="font-size: .9em" class="text-muted mb-1" :date="post.created"></date>
         </div>
         <!--<div class="card-subtitle text-muted mb-1" style="font-size: 0.9em" v-text="post.created"></div>-->
         <p class="card-text" v-text="post.summary"></p>
