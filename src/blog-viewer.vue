@@ -9,15 +9,19 @@
 </style>
 <template>
   <div class="container" style="max-width: 900px">
-    <div v-if="tags" class="mt-3 d-flex align-items-center parent-spaced">
+    <div class="mt-3 parent-spaced d-flex align-items-center flex-wrap">
       <router-link class="mr-auto child-spaced" to="/blog">Back</router-link>
       <span class="sr-only">blog post tags</span>
-      <span class="badge badge-info child-spaced" style="font-size: 1.2em" v-for="tag in tags" v-text="tag"></span>
+      <span class="badge badge-info child-spaced" style="font-size: 1.2rem" v-for="tag in tags" v-text="tag"></span>
     </div>
     <div class="mt-3">
-      <h1 class="display-3" v-text="title"></h1>
+      <h1 class="display-4" v-text="title"></h1>
       <h5 class="text-muted d-flex align-items-center">
         <date :date="created"></date>
+      </h5>
+      <h5 class="my-3 d-flex align-items-center">
+        <span class="mr-2">Michael Scott</span>
+        <img src="assets/hedgehog.svg">
       </h5>
       <hr class="sub-divider">
       <div v-html="post"></div>

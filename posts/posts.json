@@ -8,5 +8,15 @@
     ],
    "created": "2021-08-21",
    "summary": "My first post!"
+  },
+  "2": {
+    "id": 2,
+    "title": "Building a Maze",
+    "tags": [
+      "algorithms",
+      "comp sci"
+    ],
+    "created": "2021-08-22",
+    "summary": "Let's take a look at how computers generate random mazes"
   }
 }
