@@ -12,7 +12,7 @@
   }
 </style>
 <template>
-  <div class="container pt-5 d-flex flex-wrap justify-content-around align-items-start">
+  <div class="container pt-3 d-flex flex-wrap justify-content-around align-items-start">
     <div class="card mb-3" style="width: 28rem" v-for="post in posts">
       <div class="card-body">
         <div class="d-flex justify-content-end" style="margin: 0 -0.2rem 0 -0.2rem">

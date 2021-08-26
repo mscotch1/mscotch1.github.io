@@ -16,6 +16,7 @@
     </div>
     <div class="mt-3">
       <h1 class="display-4" v-text="title"></h1>
+      <hr class="sub-divider">
       <h5 class="text-muted d-flex align-items-center">
         <date :date="created"></date>
       </h5>
@@ -23,7 +24,6 @@
         <span class="mr-2">Michael Scott</span>
         <img src="assets/hedgehog.svg">
       </h5>
-      <hr class="sub-divider">
       <div v-html="post"></div>
       <hr class="sub-divider">
       <router-link class="mr-auto child-spaced float-right mb-3" to="/blog">Back</router-link>
