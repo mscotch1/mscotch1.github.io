@@ -9,7 +9,6 @@ import SiteComponent from 'src/site.vue';
 
 // routeable components ("pages")
 import HomeComponent from 'src/home.vue';
-import AboutComponent from 'src/about.vue';
 import BlogComponent from 'src/blog.vue';
 import BlogViewerComponent from 'src/blog-viewer.vue';
 
@@ -17,7 +16,6 @@ const router = VueRouter.createRouter({
   history: VueRouter.createWebHashHistory(),
   routes: [
     { component: HomeComponent, path: '/', name: 'home' },
-    { component: AboutComponent, path: '/about', name: 'about' },
     { component: BlogComponent, path: '/blog', name: 'blog' },
     { component: BlogViewerComponent, path: '/blog/:id', name: 'blog-view' },
   ],
