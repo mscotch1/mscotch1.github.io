@@ -1,8 +1,8 @@
 <p>When I was first learning how to code in high school, I wrote a bunch of dinky, fun programs to do all sorts of things. One project I remember in particular was a program to generate a random maze, the kind one can often find on kids' menus in family restaurants. For my inaugural blog post, I thought it would be fun to revisit that program and re-implement it in JavaScript.</p>
 <p>Before writing any code, the first step I took was to visit the <a target="_blank" href="https://en.wikipedia.org/wiki/Maze_generation_algorithm">Maze generation algorithm Wikipedia page</a>. For this project, I thought I'd implement the randomized depth-first search, which is the same algorithm I used ten years ago in my high school program. However, while my old program relied on a recursive implementation, I decided to use an iterative approach for the new one. I typically like to avoid recursion when I can, and I thought that using an explicit <a target="_blank" href="https://en.wikipedia.org/wiki/Stack_(abstract_data_type)">stack data structure</a> rather than using <a target="_blank" href="https://en.wikipedia.org/wiki/Call_stack">stack frames</a> in their place would make my code more readable and refactorable.</p>
 <p>Here is the pseudo-code for the algorithm I used (copied verbatim from the Wikipedia page).</p>
-<pre style="white-space: pre-wrap">
-1) Choose the initial cell, mark it as visited and push it to the stack
+<pre class="language-none">
+<code>1) Choose the initial cell, mark it as visited and push it to the stack
 2) While the stack is not empty
   1) Pop a cell from the stack and make it a current cell
   2) If the current cell has any neighbours which have not been visited
@@ -10,7 +10,7 @@
     2) Choose one of the unvisited neighbours
     3) Remove the wall between the current cell and the chosen cell
     4) Mark the chosen cell as visited and push it to the stack
-</pre>
+</code></pre>
 <p>This algorithm models the maze as a grid of "cells," which are akin to squares on a chessboard. "Neighbors" are the squares immediately above, below, to the left of, and to the right of a given cell. The maze is produced by linking neighboring cells together in a randomized way such that every cell is connected to every other.</p>
 <p>One thing that strikes me about the the randomized depth-first search is how it mirrors how people, myself included, typically solve mazes. To visualize this, it helps me to think of adding cells to the stack as drawing a pencil line and removing cells from the stack as physically back-tracking. Loosely translated, to me the algorithm becomes something like, "draw a random line connecting cells, back-tracking when you encounter a dead-end, until you have visited every cell."</p>
 <h3>Code</h3>
