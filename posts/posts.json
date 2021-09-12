@@ -14,9 +14,20 @@
     "title": "Generating a Maze",
     "tags": [
       "algorithms",
-      "javascript"
+      "js"
     ],
     "created": "2021-08-25",
     "summary": "Let's take a look at how computers generate random mazes"
+  },
+  "3": {
+    "id": 3,
+    "title": "WebAssembly: Part 1",
+    "tags": [
+      "wasm",
+      "rust",
+      "js"
+    ],
+    "created": "2021-09-12",
+    "summary": "Running compiled Rust directly in the browser. What's not to love?"
   }
 }

@@ -1,0 +1,32 @@
+<p>For the last two years, I have been reading through <a target="_blank" href="https://doc.rust-lang.org/stable/book/">The Rust Book</a> in my spare time. Due to long stretches of inactivity on my part and several starts and stops, I have only read through Chapter 13. However, I have recently started reading it again with the intent to start a new project: a version of <a target="_blank" href="https://en.wikipedia.org/wiki/Reversi">Othello</a> that runs in the browser.</p>
+<p>Now, playing Othello in the browser is not exactly a novel idea. I, along with my dad, got into playing a <a target="_blank" href="https://en.wikipedia.org/wiki/Adobe_Flash">Flash</a> version of the game when I was a kid. This directly led to me writing my own Othello program a few years later in C++. Writing that program taught me a lot about C++ and programming in general, so I thought it would be a fun to do it again, but with different technologies: Rust and the modern Canvas API. Which leads me to the actual content of this blog post: my first project compiling Rust to <a target="_blank" href="https://webassembly.org/">WebAssembly</a>!</p>
+<p>For those who don't know, WebAssembly (or Wasm) is a binary instruction format designed to be platform-independent, run at near-native speeds, and operate primarily in the browser. It was first standardized in 2017 by the four major browsers of the time: Firefox, Chrome, Safari, and Edge. It is meant to be a complement to JavaScript and improve critical performance components of web applications rather than a replacement; hence, Wasm functions can be run from JavaScript, and vice versa.</p>
+<p>For my first use of Wasm, I made a small app to compare the performance of the <code>Array.sort</code> method in JavaScript to the sort method in Rust's standard library. The Rust is pretty minimal and can be seen in Figure 1 (the full project can be found <a target="_blank" href="https://github.com/mscotch1/Wasm-sort-compare">here</a>).</p>
+<figure>
+  <pre class="line-numbers">
+  <code class="language-rust">// Rust to be compiled to WebAssembly
+  use Wasm_bindgen::prelude::*;
+
+  #[Wasm_bindgen]
+  pub fn sort(mut list: Vec<u32>) -> Vec<u32> {
+      list.sort();
+      return list;
+  }</code></pre>
+  <figcaption style="font-size: 0.85em"><strong>Fig. 1</strong> Contents of lib.rs</figcaption>
+</figure>
+<p>Somewhat naïvely, I thought that by compiling the above code to Wasm, I would immediately see something like a 20% speed bump in the sorting performance over standard JavaScript. Much to my surprise, the Javascript array sorting consistently outpaced the Wasm by roughly a factor of two. Initially, it seemed the JS was almost ten times as fast, but I soon realized that the parameter <code>list</code> was being copied rather than borrowed (what is referred to in C-languages as "passed by reference"), and so to make a fair comparison I needed to perform a similar copy in the JavaScript as well as the Rust, as can be seen in Figure 2.</p>
+<figure>
+    <pre class="line-numbers" data-start="47">
+    <code class="language-js">// JS used to compare sort methods
+    const [js_time, wasm_time] = compare_sort_methods(
+      (arr) => {
+        const new_arr = Array.from(arr);
+        new_arr.sort((a, b) => a - b);
+        return new_arr;
+      },
+      wasm.sort,
+      samples,
+    );</code></pre>
+    <figcaption style="font-size: 0.85em"><strong>Fig. 2</strong> Excerpt from index.js</figcaption>
+</figure>
+<p>The <code>Array.from</code> call creates a new Array from the passed <code>arr</code>, and then the sorting is performed on the copy. I am still somewhat disappointed by the seemingly lackluster performance of the Rust, but I suspect that the overhead of calling the Wasm is currently outstripping the benefits of running bytecode. Furthermore, I imagine that JavaScript's <code>sort</code> method has been highly optimized, and might not be the best candidate for being replaced by a Wasm module. The algorithm I will use for Othello will be a good candidate for multithreading, so I think Wasm may have some more benefits for it since Javascript runs in a single thread. Therfore, I intend to continue on with my plan to write the AI of Othello with Rust, though I think I'll need to read some more about Rust and Wasm before really starting that project properly. Luckily, there is a <a target="_blank" href="https://rustwasm.github.io/docs/book/">whole book</a> available on the web!</p>

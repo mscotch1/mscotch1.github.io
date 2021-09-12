@@ -22,7 +22,7 @@
         :text="tag"></span>
     </div>
     <div class="mt-3">
-      <h1 class="display-4" v-text="title"></h1>
+      <h2 class="display-4" v-text="title"></h2>
       <hr class="sub-divider">
       <h5 class="text-muted d-flex align-items-center">
         <date :date="created"></date>
@@ -40,6 +40,8 @@
 <script>
   import Prism from 'prismjs';
   Prism.manual = true;
+
+  import 'prismjs/components/prism-rust';
   import 'prismjs/plugins/line-numbers/prism-line-numbers';
 
   import posts from 'posts/posts.json';
