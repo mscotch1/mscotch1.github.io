@@ -26,6 +26,13 @@ module.exports = {
         loader: 'babel-loader'
       },
       {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader',
+        ],
+      },
+      {
         test: /\.s[ac]ss$/,
         use: [
           "style-loader",
@@ -42,7 +49,11 @@ module.exports = {
             },
           },
         ]
-      }
+      },
+      {
+        test: /\.(jpg|jpeg|png|woff|woff2|eot|ttf)$/,
+        loader: 'url-loader?limit=100000',
+      },
     ]
   },
   resolve: {

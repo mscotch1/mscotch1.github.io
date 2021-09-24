@@ -1,6 +1,5 @@
 <style lang="scss">
   /*! `Hootstrap` Bootstrap 4 theme */
-  @import url(https://fonts.googleapis.com/css?family=Lato:200,300,400,700);
   $font-family-base:Lato;
 
   // size font

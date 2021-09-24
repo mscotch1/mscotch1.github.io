@@ -1,6 +1,7 @@
 // 3rd party imports
 import 'jquery/dist/jquery.min.js'
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+import '@fontsource/lato';
 import * as Vue from 'vue';
 import * as VueRouter from 'vue-router';
 
@@ -27,5 +28,5 @@ const app = Vue.createApp({
 });
 app.use(router);
 
-const mounted_app = app.mount('#app');
+app.mount('#app');
 
