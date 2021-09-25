@@ -20,7 +20,7 @@
   "homepage": "https://github.com/mscotch1/mscotch1.github.io#readme",
   "dependencies": {
     "@fontsource/lato": "^4.5.0",
-    "bootstrap": "^4.6.0",
+    "bootstrap": "^5.1.1",
     "jquery": "^3.5.1",
     "prismjs": "^1.24.1",
     "vue": "^3.0.5",

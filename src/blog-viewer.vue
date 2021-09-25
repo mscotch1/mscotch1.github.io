@@ -11,15 +11,16 @@
 </style>
 <template>
   <div class="container" style="max-width: 900px">
-    <div class="mt-3 parent-spaced d-flex align-items-center flex-wrap">
-      <router-link class="mr-auto child-spaced" to="/blog">Back</router-link>
-      <span class="sr-only">blog post tags</span>
-      <span
-        class="badge badge-info child-spaced"
+    <div class="mt-3 d-flex align-items-center flex-wrap parent-spaced">
+      <router-link class="flex-grow-1 child-spaced" to="/blog">Back</router-link>
+      <span class="visually-hidden">blog post tags</span>
+      <div
+        class="badge bg-info child-spaced"
         style="font-size: 1.2rem"
-        :for="(tag, index) in tags"
+        v-for="(tag, index) in tags"
         :key="index"
-        :text="tag"></span>
+        v-text="tag">
+        </div>
     </div>
     <div class="mt-3">
       <h2 class="display-4" v-text="title"></h2>
@@ -33,7 +34,7 @@
       </h5>
       <div id="content" v-html="post"></div>
       <hr class="sub-divider">
-      <router-link class="mr-auto child-spaced float-right mb-3" to="/blog">Back</router-link>
+      <router-link class="float-end mb-3" to="/blog">Back</router-link>
     </div>
   </div>
 </template>
