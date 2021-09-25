@@ -17,7 +17,7 @@
           <li>I graduated from the University of Wisconsin-Madison</li>
           <li>I live in Oconomowoc, WI with my fiancé</li>
         </ul>
-        I'm a software developer by trade and (sometimes) as a hobby. Lately, I've been messing around with Rust <i v-html="mdiRS"></i> and TypeScript <i v-html="mdiTS"></i> in my spare time. For work, I write mostly C++ <i v-html="mdiCpp"></i> and JavaScript <i v-html="mdiJS"></i>. Outside of computers, I enjoy stand-up paddleboarding, Texas Hold 'Em <i v-html="mdiCards"></i>, and videogames <i v-html="mdiSwitch"></i>. Oh, and I'm a fan of The Office.
+        I'm a software developer by trade and (sometimes) as a hobby. Lately, I've been messing around with Rust <i v-html="mdiRS"></i> and TypeScript <i v-html="mdiTS"></i> in my spare time. For work, I write mostly C++ <i v-html="mdiCpp"></i> and JavaScript <i v-html="mdiJS"></i>. Outside of computers, I enjoy stand-up paddleboarding, Texas Hold 'Em <i v-html="mdiCards"></i>, and videogames <i v-html="mdiSwitch"></i>. Oh, and I'm a fan of <em>The Office</em>.
       </p>
       <h2 class="mt-3 display-4">Toolkit</h2>
       <blurb v-for="(tool, index) in tools"
