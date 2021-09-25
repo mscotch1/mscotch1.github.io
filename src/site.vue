@@ -5,6 +5,8 @@
   // size font
   $font-size-base:1.2rem;
 
+  $link-decoration: underline;
+
   // Add SASS theme customizations here..
   $white: #fff;
   $gray-100: #f8f9fa;
@@ -64,7 +66,7 @@
   <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-primary px-3"
     style="position: sticky; top: 0; z-index: 999">
     <a class="navbar-brand" href="#"><img src="assets/hedgehog.svg"></a>
-    <a class="navbar-brand text-capitalized badge rounded-pill bg-dark p-2 text-decoration-none" target="_blank" href="https://blacklivesmatter.com/">Black Lives Matter</a>
+    <a class="navbar-brand text-capitalized badge rounded-pill bg-dark p-2" target="_blank" href="https://blacklivesmatter.com/">Black Lives Matter</a>
     <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
       data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
       aria-label="Toggle navigation">

@@ -1,30 +1,25 @@
 <template>
   <div id="page-content" class="d-flex flex-column">
-    <div class="bg-light p-5">
+    <div class="bg-light p-3">
       <div class="container">
-        <h1 class="display-4">Michael Scott</h1>
-        <p class="lead">
-          I am a software developer at <a target="_blank" href="https://smartuq.com/">SmartUQ</a>, an analytics software
-          company based in Madison, Wisconsin.
-          For fun, I enjoy stand-up paddleboarding. And making this website, I suppose.
+        <h1 class="display-3">Michael Scott <small class="text-muted">(he/him)</small></h1>
+        <p class="lead text-right">
+        "You miss 100% of the shots you don't take. <small>&mdash;Wayne Gretzky</small>"<br>
+        &mdash;Michael Scott
         </p>
       </div>
     </div>
     <div class="container">
-      <h2 class="mt-3">Interests</h2>
-      <blurb v-for="(interest, index) in interests"
-        :key="index"
-        :header="interest.header"
-        :description="interest.description"
-        :image="interest.image"
-        :credit="interest.credit"
-        :alt="interest.alt"
-        :class="{
-          'mb-3': index !== interests.length - 1,
-          'reverse': index % 2 === 0,
-        }">
-      </blurb>
-      <h2 class="mt-3">Tech Toolkit</h2>
+      <h2 class="mt-3 display-4">About</h2>
+      <p>
+        <ul>
+          <li>I work for <a target="_blank" href="https://smartuq.com/">SmartUQ</a></li>
+          <li>I graduated from the University of Wisconsin-Madison</li>
+          <li>I live in Oconomowoc, WI with my fiancé</li>
+        </ul>
+        I'm a software developer by trade and (sometimes) as a hobby. Lately, I've been messing around with Rust <i v-html="mdiRS"></i> and TypeScript <i v-html="mdiTS"></i> in my spare time. For work, I write mostly C++ <i v-html="mdiCpp"></i> and JavaScript <i v-html="mdiJS"></i>. Outside of computers, I enjoy stand-up paddleboarding, Texas Hold 'Em <i v-html="mdiCards"></i>, and videogames <i v-html="mdiSwitch"></i>. Oh, and I'm a fan of The Office.
+      </p>
+      <h2 class="mt-3 display-4">Toolkit</h2>
       <blurb v-for="(tool, index) in tools"
         :key="index"
         :header="tool.header"
@@ -42,6 +37,12 @@
 </template>
 
 <script>
+  import mdiSwitch from '@mdi/svg/svg/nintendo-switch.svg';
+  import mdiCards from '@mdi/svg/svg/cards-playing-outline.svg';
+  import mdiCpp from '@mdi/svg/svg/language-cpp.svg';
+  import mdiJS from '@mdi/svg/svg/language-javascript.svg';
+  import mdiTS from '@mdi/svg/svg/language-typescript.svg';
+  import mdiRS from '@mdi/svg/svg/language-rust.svg';
   import blurb from './components/Blurb.vue';
   export default {
     components: {
@@ -49,6 +50,12 @@
     },
     data() {
       return {
+        mdiSwitch,
+        mdiCards,
+        mdiCpp,
+        mdiJS,
+        mdiTS,
+        mdiRS,
         interests: [
           {
             header: 'Math and Physics',
