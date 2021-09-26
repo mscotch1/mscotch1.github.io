@@ -29,7 +29,7 @@
         <date :date="created"></date>
       </h5>
       <h5 class="my-3 d-flex align-items-center">
-        <span class="mr-2">Michael Scott</span>
+        <span class="me-2">Michael Scott</span>
         <img src="assets/hedgehog.svg">
       </h5>
       <div id="content" v-html="post"></div>

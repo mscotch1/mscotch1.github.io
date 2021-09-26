@@ -1,39 +1,38 @@
-<style lang="scss" scoped>
-.reverse .content {
-  flex-direction: row-reverse;
-}
-</style>
-
 <template>
-  <div class="card">
-    <div class="row content g-0">
-      <div class="col-lg-8">
-        <div class="card-body d-flex flex-column">
-          <h3 class="card-title">{{ header }}</h3>
-          <p class="card-text">{{ description }}</p>
-          <p class="card-text"><small>Image from: <span class="text-muted" v-html="credit"></span></small></p>
-        </div>
-      </div>
-      <div class="col-lg-4 position-relative">
-        <img :src="image" :alt="alt" style="max-width: 50vw" class="p-3 h-100 w-100">
-      </div>
-    </div>
-  </div>
+  <img
+    ref="image"
+    data-bs-toggle="popover"
+    :title="header"
+    :data-bs-content="credit"
+    :src="image"
+    :alt="alt"
+    class="p-3"
+  >
 </template>
 
 <script>
+  import Popover from 'bootstrap/js/dist/popover';
   export default {
     props: {
       header: String,
       alt: String,
-      description: String,
       credit: String,
       image: String,
     },
-    data() {
-      return {
-      };
-    }
+    created() {
+      this.$nextTick(() => {
+        new Popover(
+          this.$refs.image,
+          {
+            html: true,
+            trigger: 'click',
+            placement: 'auto',
+            container: 'body',
+            boundary: 'viewport',
+          },
+        );
+      });
+    },
   };
 </script>
 
