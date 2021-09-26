@@ -13,11 +13,11 @@
 </style>
 <template>
   <div class="container pt-3 ">
-    <div class="row row-cols-2">
-      <div class="col mb-3" v-for="(post, index) in posts" :key="index">
+    <div class="row">
+      <div class="col-lg-6 mb-3" v-for="(post, index) in posts" :key="index">
         <div class="card">
           <div class="card-body">
-            <div class="d-flex justify-content-end">
+            <div class="d-flex justify-content-end overflow-hidden">
               <span class="badge bg-info mx-1" v-for="(tag, index) in post.tags" :key="index" v-text="tag"></span>
             </div>
             <div style="font-size: 1.2em" class="card-title d-flex flex-wrap justify-content-between align-items-baseline">
